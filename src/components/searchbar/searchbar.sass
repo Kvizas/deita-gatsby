@@ -1,0 +1,55 @@
+@use "../../sass/abstracts/_variables" as *
+
+.searchbar
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .05)
+    border-radius: 1.5rem
+    padding: 1vw 7.1vw 1vw 3.7vw
+    border: none
+    width: 100%
+    transition: box-shadow .15s
+    font-family: Lexend
+    text-overflow: ellipsis
+    box-sizing: border-box
+    font-size: 1.3rem
+
+    &__wrapper
+        width: 39.48vw
+        margin: auto
+        position: relative
+
+    &:active, &:focus
+        outline: none
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, .08)
+
+    &::placeholder
+        color: $secondary-text-color
+
+    &__icon
+        position: absolute
+        margin: auto 0
+        inset: 0
+        left: 1.25vw
+        width: 1.40625vw
+        pointer-events: none
+
+    &__btn
+        position: absolute
+        margin: auto 0
+        top: 0
+        bottom: 0
+        height: fit-content
+        right: .3vw
+        border-radius: 1vw
+        font-size: 1.3rem
+        font-weight: 600
+        padding: .7vw .3vw
+        width: 6.5vw
+        background: $primary-color
+        color: #fff
+        cursor: pointer
+        user-select: none
+        box-sizing: border-box
+        text-align: center
+
+        &:active
+            background: lighten($primary-color, 2.5%)

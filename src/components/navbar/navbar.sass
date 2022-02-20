@@ -1,0 +1,29 @@
+@use "../../sass/abstracts/_placeholders"
+
+.navbar
+    @extend %flex-center
+    @extend %section
+    height: 10vh
+    font-weight: 500
+    user-select: none
+    padding: unset
+
+    &__logo
+        @extend %flex-center
+        justify-content: start
+        font-weight: 700
+        font-size: 1.7rem
+
+        img
+            margin-right: .75rem
+
+    &__item
+        margin: 0 1.5rem
+        color: #000
+        text-decoration: none
+
+    &__auth
+        @extend %flex-center
+
+        .btn
+            margin-left: 25px
