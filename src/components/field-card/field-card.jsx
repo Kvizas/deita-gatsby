@@ -17,9 +17,9 @@ export default function FieldCard({ field }) {
         </div>
         <div className="fieldcard__amount">
           <span className="fieldcard__amount__rect">
-            42
+            {field.amount}
           </span>
-          pamokas
+          {field.amount }
         </div>
       </div>
     </div>
