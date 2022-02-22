@@ -40,21 +40,7 @@ const colStyles = {
 const IndexPage = () => {
   return (
     <StaticQuery
-      query={
-        graphql`
-        {
-          strapi {
-            konspektais {
-              data {
-                attributes {
-                  Name
-                }
-              }
-            }
-          }
-        }
-      `
-      }
+      query={undefined}
       render={data =>
         <main style={pageStyles}>
           <title>Home Page</title>
