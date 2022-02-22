@@ -1,6 +1,7 @@
 import * as React from "react"
 import Header from "../components/header/header"
 import Navbar from "../components/navbar/navbar"
+import Recommendation from "../components/recommendation/recommendation"
 
 import "./index.sass"
 
@@ -8,8 +9,9 @@ import "./index.sass"
 const IndexPage = () => {
   return (
     <main>
-      <Navbar></Navbar>
-      <Header></Header>
+      <Navbar />
+      <Header />
+      <Recommendation />
     </main>
   )
 }

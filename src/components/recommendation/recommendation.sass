@@ -1,4 +1,25 @@
 @use "../../sass/abstracts/_placeholders"
+@use "../../sass/abstracts/_variables" as *
 
 .recom
     @extend %section
+    margin: auto
+    background: white
+    z-index: 2
+
+    &__wrapper
+        position: relative
+        width: 100%
+        background-size: cover!important
+
+    h2
+        text-align: center
+
+    &__side
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+
+        &--left
+            transform: translateX(-80%)
