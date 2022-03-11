@@ -3,17 +3,21 @@
 
 .recom
     @extend %section
-    margin: auto
+    width: unset
     background: white
     z-index: 2
 
-    &__wrapper
-        position: relative
-        width: 100%
-        background-size: cover!important
-
     h2
         text-align: center
+
+    &__container
+        @extend %section
+        @extend %flex-center
+        position: relative
+        background: white
+        padding: 6vh 7vw
+        box-sizing: border-box
+        margin: auto
 
     &__side
         position: absolute
@@ -21,5 +25,20 @@
         bottom: 0
         margin: auto
 
+        &__wrapper
+            width: 100%
+            background-size: cover!important
+
         &--left
-            transform: translateX(-80%)
+            left: 0
+            transform: translateX(-70%)
+
+        &--right
+            right: 0
+            transform: translateX(70%)
+
+    &__img
+        position: absolute
+        right: 0
+        bottom: 0
+        transform: translateX(45%) translateY(20%)
