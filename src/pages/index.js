@@ -1,4 +1,5 @@
 import * as React from "react"
+import Footer from "../components/footer/footer"
 import Header from "../components/header/header"
 import Navbar from "../components/navbar/navbar"
 import Recommendation from "../components/recommendation/recommendation"
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <Navbar />
       <Header />
       <Recommendation />
+      <Footer />
     </main>
   )
 }

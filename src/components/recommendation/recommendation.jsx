@@ -32,7 +32,7 @@ export default function Recommendation() {
           />
 
             <RecomCard recom={{
-              title: "Matematika",
+              title: "Lietuvių kalba",
               subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
               amount: 210
             }}></RecomCard>
@@ -42,19 +42,24 @@ export default function Recommendation() {
               amount: 3215
             }}></RecomCard>
             <RecomCard recom={{
-              title: "Matematika",
+              title: "Fizika",
               subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
               amount: 42
             }}></RecomCard>
             <RecomCard recom={{
-              title: "Matematika",
+              title: "Informatika",
               subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
               amount: 1456
             }}></RecomCard>
             <RecomCard recom={{
-              title: "Matematika",
+              title: "Istorija",
               subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
               amount: 651
+            }}></RecomCard>
+            <RecomCard recom={{
+              title: "Geografija",
+              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+              amount: 121
             }}></RecomCard>
         </div>
       </div>

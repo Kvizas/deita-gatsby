@@ -19,9 +19,9 @@ export default function RecomCard({ recom }) {
       </div>
       <div className="recomcard__content">
         <h5>{recom.title}</h5>
-        <div className="recomcard__subtitle">
+        <p className="recomcard__subtitle">
           {recom.subtitle}
-        </div>
+        </p>
         <div className="recomcard__amount">
           <span className="recomcard__amount__rect">
             {recom.amount}

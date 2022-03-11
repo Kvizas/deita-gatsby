@@ -1,16 +1,16 @@
 import React from 'react'
 
 import "./navbar.sass";
-import Logo from "../../images/logo.svg";
 import Button from '../button/button';
 import SearchbarSmall from '../searchbar-small/searchbar-small';
+import Logo from '../logo/logo';
 
 export default function Navbar() {
   return (
     <div className='navbar'>
 
       <div className="navbar__logo">
-          <img src={Logo} alt="Deita logo" /> Deita
+        <Logo style={{width: "140px"}}/>
       </div>
 
       <div>

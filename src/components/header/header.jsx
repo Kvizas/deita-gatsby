@@ -12,20 +12,21 @@ export default function Header() {
         <div className="header__text">
             <h1>Platforma leidžianti surasti mokymosi medžiagą</h1>
             <div className="header__sub">
-                278+ vaizdo pamokų, 125+ konspektų, daugiau <br/> nei 200 išspręstų uždavinių... 
+                278+ vaizdo pamokų, 125+ konspektų, virš 200 išspręstų uždavinių ir visa tai, kad pasiektum daugiau... 
             </div>
         </div>
-            {/* <StaticImage
+            <StaticImage
+                className='header__img'
                 placeholder='tracedSVG'
-                src='../../images/header_img.png'
+                src='../../images/caesar_newton_comp.svg'
+                width={488}
                 alt='Deita matematikos, fizikos, informatikos, istorijos, geografijos ir lietuvių kalbos medžiaga.'
-            /> */}
-        <img className='header__img' src={HeaderSVG} alt='Deita matematikos, fizikos, informatikos, istorijos, geografijos ir lietuvių kalbos medžiaga.'/>
+            />
 
         <div className='header__search'>
-            <div className="header__search__text" style={{marginBottom: "2.5vh"}}>
+            <p className="header__search__text" style={{marginBottom: "2.5vh"}}>
                 Galime surasti jus dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus vos iš jūsų įvesto konteksto ar uždavinio sąlygos.
-            </div>
+            </p>
             <Searchbar></Searchbar>
         </div>
     </section>
