@@ -4,8 +4,6 @@ import Searchbar from '../searchbar/searchbar'
 
 import "./header.sass"
 
-import HeaderSVG from "../../images/header_svg.svg";
-
 export default function Header() {
   return (
     <section className='header'>
