@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import "./navbar.sass";
 import Button from '../button/button';
@@ -8,6 +8,27 @@ import Logo from '../logo/logo';
 import LoginSVG from "../../images/login.svg";
 
 export default function Navbar() {
+
+  const navigation = [
+    {
+      title: "Konspektai",
+      url: "/synopses"
+    },
+    {
+      title: "Sprendimai",
+      url: "/solutions"
+    },
+    {
+      title: "Prenumeratos",
+      url: "/pricing"
+    },
+  ]
+
+  const [burgerOpened, setBurgerOpened] = useState(false)
+
+  const toggleBurger = () => setBurgerOpened(prev => !prev);
+  const exitBurger = () => setBurgerOpened(false);
+
   return (
     <>
     <div className="navbar__fill"></div>
@@ -18,9 +39,7 @@ export default function Navbar() {
         </div>
 
         <div className='navbar__item__list'>
-            <a href='synopses' className="navbar__item">Konspektai</a>
-            <a href='videos' className="navbar__item">Sprendimai</a>
-            <a href='pricing' className="navbar__item">Prenumeratos</a>
+            {navigation.map(n => <a href={n.url} className="navbar__item">{n.title}</a>)}
         </div>
 
         <div className="navbar__search">
@@ -35,7 +54,7 @@ export default function Navbar() {
         <div className="navbar__auth--mobile">
           <div>Prisijungti</div>
           <img src={LoginSVG} alt="Prisijungimas ir registracija"/>
-          <div className="navbar__burger">
+          <div role='button' tabIndex={0} aria-label="Navigation" className="navbar__burger" onClick={toggleBurger} onKeyDown={toggleBurger}>
             <div></div>
             <div></div>
             <div></div>
@@ -43,6 +62,13 @@ export default function Navbar() {
         </div>
       </div>
     </div>
+    <div className={`navbar__m navbar__m__modal ${burgerOpened ? '' : 'navbar__m__modal--hidden'}`}>
+      <div className="navbar__m__modal__items">
+            {navigation.map(n => <a href={n.url} className="navbar__item">{n.title}</a>)}
+      </div>
+      <SearchbarSmall style={{width: "67vw"}} wrapperStyle={{width: "67vw"}}/>
+    </div>
+    <div role='button' tabIndex={0} aria-label="Hide navigation" className={`navbar__m navbar__m__bg ${burgerOpened ? '' : 'navbar__m__bg--hidden'}`} onClick={exitBurger} onKeyDown={exitBurger} />
     </>
   )
 }

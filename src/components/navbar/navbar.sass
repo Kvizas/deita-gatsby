@@ -30,6 +30,9 @@
         background: rgba(255, 255, 255, .98)
         border-bottom: 1px solid rgba(0, 0, 0, .03)
 
+        @media (max-width: 850px)
+            background: white
+
     &__logo
         @extend %flex-center
         justify-content: start
@@ -84,6 +87,7 @@
     &__burger
         display: none
         margin-left: 20px
+        cursor: pointer
 
         div
             width: 26px
@@ -94,3 +98,48 @@
 
         @media (max-width: 850px)
             display: block
+
+    &__m
+        display: none
+
+        @media (max-width: 850px)
+            display: unset
+
+        &__modal
+            position: fixed
+            width: 82vw
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 99
+            background: white
+            padding: 10vh 7.5vw 5vh
+            box-sizing: border-box
+            transition: transform .2s
+
+            &--hidden
+                transform: translateX(82vw)
+
+            &__items
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                line-height: 5.75vw
+                margin: 2.5vh 0
+
+                .navbar__item
+                    margin: 0
+                    font-size: 3.3vw
+
+        &__bg
+            position: fixed
+            inset: 0
+            background: rgba(black, .69)
+            z-index: 98
+            opacity: 1
+            transition: opacity .4s, visibility .4s
+            visibility: visible
+
+            &--hidden
+                opacity: 0
+                visibility: hidden

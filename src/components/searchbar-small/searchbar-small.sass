@@ -3,26 +3,29 @@
 .searchbar
 
     &--small
-        padding: .8vw 4.4vw .8vw 2.5vw
+        padding: .8vw calc(max(50px, 3.8vw) + 8px + .6vw) .8vw 49.2px
         font-size: .875rem
-        border-radius: .83vw
-        min-width: 150px
+        border-radius: max(.4vw, .8rem)
+        min-width: 180px
+        min-height: 40px
 
     &__wrapper
         &--small
             width: 17vw
-            min-width: 150px
+            min-width: 180px
+            min-height: 40px
             margin: unset
 
     &__icon
         &--small
-            width: 1vw
-            left: .8vw
+            width: 19.2px
+            left: 15px
 
     &__btn
         &--small
-            border-radius: .875vw
+            margin: 4px
+            border-radius: max(.3vw, .7rem)
             width: 3.8vw
-            min-width: 40px
+            min-width: 50px
             padding: .35vw .3vw
             font-size: 1.25rem

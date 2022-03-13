@@ -1,11 +1,13 @@
 @use "../../sass/abstracts/_variables" as *
+@use "../../sass/abstracts/_placeholders"
 
 .searchbar
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, .05)
-    border-radius: 1.5rem
-    padding: 1vw 7.1vw 1vw 3.7vw
+    border-radius: max(1vw, 1rem)
+    padding: 1vw calc(max(85px, 6.5vw) + 12px + .6vw) 1vw 75px
     border: none
     width: 100%
+    min-height: 50px
     transition: box-shadow .15s
     font-family: Lexend
     text-overflow: ellipsis
@@ -16,6 +18,7 @@
         width: 39.48vw
         margin: auto
         position: relative
+        min-height: 50px
 
     &:active, &:focus
         outline: none
@@ -28,28 +31,29 @@
         position: absolute
         margin: auto 0
         inset: 0
-        left: 1.25vw
-        width: 1.40625vw
+        left: 24px
+        width: 27px
         pointer-events: none
 
     &__btn
         position: absolute
-        margin: auto 0
+        margin: 6px
         top: 0
         bottom: 0
-        height: fit-content
-        right: .3vw
-        border-radius: 1vw
+        right: 0
+        border-radius: max(.9vw, .9rem)
         font-size: 1.3rem
         font-weight: 600
         padding: .7vw .3vw
         width: 6.5vw
+        min-width: 85px
         background: $primary-color
         color: #fff
         cursor: pointer
         user-select: none
-        box-sizing: border-box
         text-align: center
+        line-height: 100%
+        @extend %flex-center
 
         &:active
             background: lighten($primary-color, 2.5%)
