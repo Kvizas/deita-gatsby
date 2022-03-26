@@ -53,12 +53,11 @@ export default function Navbar() {
       </div>
     </div>
     <div className={`navbar__m navbar__m__modal ${burgerOpened ? '' : 'navbar__m__modal--hidden'}`}>
-      <h5 className='navbar__m__modal__h'>Pasirinkite ko ieškote</h5>
+      <SearchbarSmall style={{width: "70vw"}} wrapperStyle={{width: "70vw"}}/>
+      <h5 className='navbar__m__modal__h'>Ieškomiausios skiltys</h5>
       <div className="navbar__m__modal__items">
             {navigation.map(n => <NavbarMobileItem item={n}/>)}
       </div>
-      <h5 className='navbar__m__modal__h'>arba ieškokite informacijos tarp visų mūsų šaltinių</h5>
-      <SearchbarSmall style={{width: "67vw"}} wrapperStyle={{width: "67vw"}}/>
     </div>
     <div role='button' tabIndex={0} aria-label="Hide navigation" className={`navbar__m navbar__m__bg ${burgerOpened ? '' : 'navbar__m__bg--hidden'}`} onClick={exitBurger} onKeyDown={exitBurger} />
     </>
