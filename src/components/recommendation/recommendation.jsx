@@ -28,6 +28,7 @@ export default function Recommendation() {
             className="recom__img"
             src='../../images/bethoven.svg'
             placeholder='tracedSVG'
+            alt="Liudvigas van Bethovenas"
             width={400}
           />
 

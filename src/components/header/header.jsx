@@ -8,8 +8,8 @@ export default function Header() {
   return (
     <section className='header'>
         <div className="header__text">
-            <h1>Platforma leidžianti surasti mokymosi medžiagą</h1>
-            <div className="header__sub">
+            <h1>Platforma, skirta atrasti mokymosi medžiagą</h1>
+            <div className="header__sub m--hidden">
                 278+ vaizdo pamokų, 125+ konspektų, virš 200 išspręstų uždavinių ir visa tai, kad pasiektum daugiau... 
             </div>
         </div>
@@ -20,7 +20,6 @@ export default function Header() {
                 width={488}
                 alt='Deita matematikos, fizikos, informatikos, istorijos, geografijos ir lietuvių kalbos medžiaga.'
             />
-
         <div className='header__search'>
             <p className="header__search__text" style={{marginBottom: "2.5vh"}}>
                 Galime surasti jus dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus vos iš jūsų įvesto konteksto ar uždavinio sąlygos.

@@ -8,16 +8,33 @@
     padding-left: 7.5rem
     padding-right: 7.5rem
     box-sizing: border-box
+    position: relative
+
+    @media (max-width: 1440px)
+        padding-left: 4rem
+        padding-right: 4rem
+
+    @media (max-width: 1440px)
+        padding-left: 2rem
+        padding-right: 2rem
 
     &__text
         @extend %flex-center
-        width: 56%
+        width: 58%
 
         *
             width: 100%
 
         h1
             line-height: 4rem
+
+            @media (max-width: 850px)
+                line-height: 2rem
+                font-size: 2rem
+
+            @media (max-width: 420px)
+                line-height: 1.2rem
+                font-size: 1.2rem
 
     &__sub
         font-size: 1.5rem
@@ -26,9 +43,20 @@
     &__img
         margin: auto
 
+        @media (max-width: 1440px)
+            width: 35vw
+            max-width: 42%
+
     &__search
-        margin-top: 7rem
         font-size: 1.5rem
         text-align: center
         width: 80%
-        margin: 5rem auto 0
+        margin: 6.5vh auto 0
+
+        @media (max-width: 850px)
+            font-size: 1.5rem
+            width: 100%
+
+        &__text
+            @media (max-width: 850px)
+                font-size: .85rem
