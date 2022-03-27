@@ -8,7 +8,8 @@ export default function Header() {
   return (
     <section className='header'>
         <div className="header__text">
-            <h1>Platforma, skirta atrasti mokymosi medžiagą</h1>
+            <h1>
+                Platforma,<br/> skirta atrasti mokymosi medžiagą</h1>
             <div className="header__sub m--hidden">
                 278+ vaizdo pamokų, 125+ konspektų, virš 200 išspręstų uždavinių ir visa tai, kad pasiektum daugiau... 
             </div>
@@ -22,7 +23,7 @@ export default function Header() {
             />
         <div className='header__search'>
             <p className="header__search__text" style={{marginBottom: "2.5vh"}}>
-                Galime surasti jus dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus vos iš jūsų įvesto konteksto ar uždavinio sąlygos.
+                Galime surasti dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus iš jūsų įvesto konteksto ar uždavinio sąlygos.
             </p>
             <Searchbar></Searchbar>
         </div>
