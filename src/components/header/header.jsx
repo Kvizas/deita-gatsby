@@ -14,13 +14,15 @@ export default function Header() {
                 278+ vaizdo pamokų, 125+ konspektų, virš 200 išspręstų uždavinių ir visa tai, kad pasiektum daugiau... 
             </div>
         </div>
+        <div className='header__img'>
             <StaticImage
-                className='header__img'
                 placeholder='tracedSVG'
                 src='../../images/caesar_newton_comp.svg'
+                layout='constrained'
                 width={488}
                 alt='Deita matematikos, fizikos, informatikos, istorijos, geografijos ir lietuvių kalbos medžiaga.'
             />
+        </div>
         <div className='header__search'>
             <p style={{marginBottom: "2.5vh"}}>
                 Galime surasti dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus iš jūsų įvesto konteksto ar uždavinio sąlygos.
