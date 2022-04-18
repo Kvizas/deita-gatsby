@@ -10,7 +10,7 @@ export default function Searchbar({ wrapperStyle, style }) {
         <img className='searchbar__icon' src={SearchSvg} alt="Paieška" />
         <input
             style={style}
-            placeholder='Ieškokite informacijos tarp 1 000+ mokslo resursų'
+            placeholder='Ieškoti tarp visų šaltinių'
             className='searchbar'
             spellCheck='false'
         />

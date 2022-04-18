@@ -15,9 +15,12 @@
         @extend %flex-center
         position: relative
         background: white
-        padding: 6vh 7vw
+        padding: min(50px, 5vw) 7vw
         box-sizing: border-box
         margin: auto
+
+        @media (max-width: 964px)
+            padding: min(50px, 5vw) 0
 
     &__side
         position: absolute

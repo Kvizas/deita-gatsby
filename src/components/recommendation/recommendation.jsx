@@ -12,8 +12,7 @@ export default function Recommendation() {
   return (
     <section className='recom'>
       <h2>
-        <span className='primary'>Deita</span> mokymosi platforma jums
-        <br/>rekomenduoja
+        <span className='primary'>Deita</span> mokymosi platforma <br className='m--hidden'/> jums rekomenduoja
       </h2>
 
       <div className='recom__side__wrapper' style={{background: `url(${Shadow}), linear-gradient(.25turn, var(--secondary-color) 50%, var(--primary-color) 50%)`}}>
@@ -21,11 +20,11 @@ export default function Recommendation() {
         
         <div className="recom__container">
 
-          <img className="recom__side recom__side--left" src={LeftConfetty} alt="Dekoracijos" />
-          <img className="recom__side recom__side--right" src={RightConfetty} alt="Dekoracijos" />
+          <img className="m--hidden recom__side recom__side--left" src={LeftConfetty} alt="Dekoracijos" />
+          <img className="m--hidden recom__side recom__side--right" src={RightConfetty} alt="Dekoracijos" />
 
           <StaticImage
-            className="recom__img"
+            className="m--hidden recom__img"
             src='../../images/bethoven.svg'
             placeholder='tracedSVG'
             alt="Liudvigas van Bethovenas"

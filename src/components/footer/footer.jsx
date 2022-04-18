@@ -25,23 +25,23 @@ export default function Footer() {
         </div>
         <div className='footer__nav'>
             <div className='footer__nav__col'>
-                <div className='footer__nav__h'>Navigacija</div>
+                <h5 className='footer__nav__h'>Navigacija</h5>
                 <a href='/'>Konspektai</a>
                 <a href='/'>Sprendimai</a>
                 <a href='/'>Prenumeratos</a>
             </div>
             <div className='footer__nav__col'>
-                <div className='footer__nav__h'>Teisinė informacija</div>
+                <h5 className='footer__nav__h'>Svetainė</h5>
                 <a href='/'>Privatumo politika</a>
                 <a href='/'>Naudojimosi sąlygos</a>
                 <a href='/'>Šaltiniai</a>
                 <a href='/'>Slapukai</a>
             </div>
             <div className='footer__nav__col'>
-                <div className='footer__nav__h'>Kontaktai</div>
-                <div className='footer__text'>Pramonės pr. 20, LT-50468 Panevėžys</div>
-                <div className='footer__text'>+370 616 55555</div>
-                <div className='footer__text'>info@deita.lt</div>
+                <h5 className='footer__nav__h'>Kontaktai</h5>
+                <p className='footer__text'>Pramonės pr. 20, LT-50468 Panevėžys</p>
+                <p className='footer__text'>+370 616 55555</p>
+                <p className='footer__text'>info@deita.lt</p>
             </div>
         </div>
     </section>

@@ -9,28 +9,35 @@
     &__credentials
         width: 22%
         font-weight: 400
-        font-size: .875rem
-        line-height: 24px
+        line-height: 2.5ex
+
+        @media (max-width: 850px)
+            width: 40%
+
+        @media (max-width: 600px)
+            width: 100%
 
     &__nav
         width: 50%
-        display: flex
-        justify-content: space-between
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: minmax(0, 1fr)
+
+        @media (max-width: 600px)
+            width: 100%
 
         &__h
-            font-size: 1.25rem
             font-weight: bold
+            margin: 8px 0
 
         &__col
             margin: 0 1vw
-            max-width: 33%
 
             a, .footer__text
                 display: block
-                font-size: .875rem
                 color: $secondary-text-color
                 text-decoration: none
-                margin: 16px 0
+                margin: 1ex 0
 
     p
         margin: 20px 0

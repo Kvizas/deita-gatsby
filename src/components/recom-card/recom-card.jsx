@@ -22,12 +22,12 @@ export default function RecomCard({ recom }) {
         <p className="recomcard__subtitle">
           {recom.subtitle}
         </p>
-        <div className="recomcard__amount">
+        <p className="recomcard__amount">
           <span className="recomcard__amount__rect">
             {recom.amount}
           </span>
           {linksnis()}
-        </div>
+        </p>
       </div>
     </div>
   )
