@@ -15,6 +15,13 @@ export default function Header() {
             </div>
         </div>
         <div className='header__img'>
+            <StaticImage
+                placeholder='tracedSVG'
+                src='../../images/caesar_newton_comp.svg'
+                layout='constrained'
+                width={488}
+                alt='Deita matematikos, fizikos, informatikos, istorijos, geografijos ir lietuvių kalbos medžiaga.'
+            />
         </div>
         <div className='header__search'>
             <p style={{marginBottom: "2.5vh"}}>
