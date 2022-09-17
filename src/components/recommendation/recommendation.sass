@@ -1,9 +1,10 @@
 @use "../../sass/abstracts/_placeholders"
+@use "../contextual-section/contextual-section"
 @use "../../sass/abstracts/_variables" as *
 
 .recom
-    @extend %section
     width: unset
+    padding: unset
     background: white
     z-index: 2
 
@@ -19,8 +20,9 @@
         box-sizing: border-box
         margin: auto
 
-        @media (max-width: 964px)
+        @media (max-width: 950px)
             padding: min(50px, 5vw) 0
+            width: 100vw
 
     &__side
         position: absolute

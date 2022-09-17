@@ -1,14 +1,29 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const strapiConfig = {
+  apiURL: process.env.STRAPI_API_URL,
+  accessToken: process.env.STRAPI_TOKEN,
+  collectionTypes: ['medziaga', 'disciplina', 'kategorija', 'knyga'],
+  singleTypes: [],
+};
+
 module.exports = {
+
   siteMetadata: {
     title: `Deita`,
-    siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-mdx", {
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/icon.png"
+      }
+    }, {
+      resolve: `gatsby-source-strapi`,
+      options: strapiConfig,
+    }, "gatsby-plugin-mdx", {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {

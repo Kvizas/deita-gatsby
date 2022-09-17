@@ -1,12 +1,14 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import Searchbar from '../searchbar/searchbar'
+
+import SearchbarInstant from '../searchbar-instant/searchbar-instant'
+import Section from '../contextual-section/contextual-section'
 
 import "./header.sass"
 
 export default function Header() {
   return (
-    <section className='header'>
+    <Section className='header'>
         <div className="header__text">
             <h1>
                 Platforma,<br/> skirta atrasti reikiamą medžiagą</h1>
@@ -27,8 +29,8 @@ export default function Header() {
             <p style={{marginBottom: "2.5vh"}}>
                 Galime surasti dominančią didaktinę medžiagą, vadovėlių ir uždavinynų sprendimus iš jūsų įvesto konteksto ar uždavinio sąlygos.
             </p>
-            <Searchbar></Searchbar>
+            <SearchbarInstant></SearchbarInstant>
         </div>
-    </section>
+    </Section>
   )
 }

@@ -2,25 +2,26 @@
 @use "../../sass/abstracts/_variables" as *
 
 .header
-    @extend %section
     display: flex
     flex-wrap: wrap
-    padding-left: 7.5rem
-    padding-right: 7.5rem
     box-sizing: border-box
     position: relative
 
-    @media (max-width: 1440px)
-        padding-left: 4rem
-        padding-right: 4rem
-
-    @media (max-width: 1440px)
-        padding-left: 2rem
-        padding-right: 2rem
+    @media (min-width: 1180px)
+        padding-left: 7.5rem
+        padding-right: 7.5rem
 
     &__text
         @extend %flex-center
-        width: 58%
+        width: calc(100% - 488px)
+
+        @media (max-width: 1440px)
+            width: calc(100% - max(33vw, 200px))
+
+        @media (max-width: 550px)
+            width: 100%
+            margin-bottom: 1rem
+            text-align: center
 
         *
             width: 100%
@@ -33,15 +34,11 @@
         margin: auto
 
         @media (max-width: 1440px)
-            width: 35vw
-            max-width: 42%
+            width: max(33vw, 200px)
 
     &__search
-        font-size: 1.5rem
-        text-align: center
         width: 80%
         margin: 30px auto 0
 
         @media (max-width: 850px)
-            font-size: 1.5rem
             width: 100%

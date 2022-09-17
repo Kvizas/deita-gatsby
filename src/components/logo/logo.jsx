@@ -21,6 +21,8 @@ import LogoSVG from "../../images/logo.svg";
 
 export default function Logo({style}) {
     return (
-        <img src={LogoSVG} alt="Deita duomenų paieškos ir mokymosi platforma" style={style}/>
+        <a href='/'>
+            <img src={LogoSVG} alt="Deita duomenų paieškos ir mokymosi platforma" style={style}/>
+        </a>
     )
 }
